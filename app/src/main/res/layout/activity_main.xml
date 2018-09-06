@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <com.example.likeview.widget.LikeView
+        android:id="@+id/lv01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:circleColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        app:bitmap="@mipmap/heart">
+    </com.example.likeview.widget.LikeView>
 
-</android.support.constraint.ConstraintLayout>
+    <com.example.likeview.widget.FloatingIv
+        android:id="@+id/fi"
+        android:layout_width="100dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        />
+    <com.example.likeview.widget.Bt
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="点我呀"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp" />
+
+
+</LinearLayout>
