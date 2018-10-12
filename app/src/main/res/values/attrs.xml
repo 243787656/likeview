@@ -5,4 +5,9 @@
         <attr name="circleColor" format="color"></attr>
         <attr name="dotNum" format="integer"></attr>
     </declare-styleable>
+    <declare-styleable name="MenuBt">
+        <attr name="bitmap" ></attr>
+      <!--  <attr name="bitmap" format="reference|integer"></attr>-->
+        <attr name="position" format="integer"></attr>
+    </declare-styleable>
 </resources>

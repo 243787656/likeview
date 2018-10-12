@@ -33,6 +33,11 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:layout_height="50dp" />
+    <com.example.likeview.widget.MenuBt
+        android:id="@+id/menu_bt"
+        app:position="1"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
 
 
 </LinearLayout>

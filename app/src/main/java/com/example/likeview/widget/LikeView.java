@@ -154,17 +154,6 @@ public class LikeView extends View {
         canvas.drawBitmap(bitmap, -bitmap.getWidth() / 2, -bitmap.getWidth() / 2, mBitmap);
     }
 
-//    @Override
-//    public boolean onTouchEvent(MotionEvent event) {
-//        int action = event.getAction();
-//        switch (action) {
-//            case MotionEvent.ACTION_UP:
-//
-//                break;
-//        }
-//        return true;
-//    }
-
     public void start() {
         circleR = Float.valueOf(bitmap.getWidth());
         circleR0 = 0f;
